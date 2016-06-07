@@ -1,0 +1,22 @@
+﻿@model WebApplication1.Models.LoginModel
+@{
+    ViewBag.Title = "Home Page";
+}
+<br />
+<br />
+@using (Html.BeginForm("Index", "Home", FormMethod.Post))
+{
+    <p>Email:</p> 
+    @Html.TextBoxFor(m => m.user.email, "Email")
+    <br />
+    <br />
+    <p>Password:</p>
+    @Html.PasswordFor(m => m.user.password, "Password")
+    <br />
+    <br />
+    Html.RenderAction("Error", "Home");
+    
+
+    <input type="submit" value="Login" />
+
+}

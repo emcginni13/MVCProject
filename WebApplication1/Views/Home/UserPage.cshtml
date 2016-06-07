@@ -1,0 +1,20 @@
+﻿@model WebApplication1.Models.UserModel
+@{
+    ViewBag.Title = "UserPage";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>UserPage</h2>
+
+<h4>Name:</h4>
+@Html.DisplayFor(m => m.data.first_name)
+
+@Html.DisplayFor(m => m.data.last_name)
+<br />
+<h4>Email:</h4>
+@Html.DisplayFor(m => m.data.email)
+<br />
+<h4>Phone:</h4>
+@Html.DisplayFor(m => m.data.phone)
+<br />
+

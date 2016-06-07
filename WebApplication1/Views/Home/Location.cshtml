@@ -1,0 +1,75 @@
+﻿@model IEnumerable<WebApplication1.Models.StateModel>
+<head>
+    <link href="@Url.Content("~/Content/StyleSheet1.css")"
+          rel="stylesheet" type="text/css" />
+</head>
+<script src="~/Scripts/jquery-1.10.2.min.js"></script><script type="text/javascript">
+    $(document).ready(function () {
+        selectCounty();
+
+    })
+
+    function Capitalize(string) {
+        //takes char at index 0 and makes it uppercase
+        return string.charAt(0).toUpperCase() + string.slice(1)
+    }
+
+    function selectCounty() {
+        //adds default selection to list
+        string = $("#countyList").append('<option value="0">' + "[Select a County]" + '</option>');
+        return string;
+    }
+
+    function CallChangeFunc(val)
+    {
+        var index = 0;
+        var name;
+        if (val.selectedIndex == 0) {
+            $("#countyList").empty();
+            selectCounty();
+        }
+        document.getElementById("county").style.display = "block";
+        //Json request
+        jQuery.ajax
+            ({
+                type: "POST",
+                url: "@Url.Action("getCounties")",
+                dataType: "json",
+                contentType: "application/json; charset=utf-8",
+                data: JSON.stringify({ id: $("#stateList option:selected").val() }),
+                success: function (response) {
+                    response = JSON.parse(response)
+                    $("#countyList").empty();
+                    selectCounty();
+                    //enter Json object
+                    $.each(response, function (i, data) {
+                        //traverse Json objects
+                        $.each(data, function (i, data) {
+                            name = data.name;
+                            $("#countyList").append('<option value="'
+                             + (i + 1) + '">'
+                             + Capitalize(name.toLowerCase()) + '</option>');
+                        });
+                    });
+                },
+            });
+    }
+
+    function showAlert(val) {
+        alert(val.value)
+    }
+</script>
+<br />
+<p>Select your state.</p>
+@*@Html.DropDownList("stateList", new SelectList((System.Collections.IEnumerable)Model),
+    new { @onchange = "CallChangeFunc(this)" })*@
+@Html.DropDownList("stateList",new SelectList(Model,"code","name"), "[Select a State]", new { @onchange = "CallChangeFunc(this)" })
+<br />
+<br />
+<div id="county">
+<p>Select your county.</p>
+<select id="countyList" onchange="showAlert(this)">
+</select>
+</div>
+<br /><br />
+
