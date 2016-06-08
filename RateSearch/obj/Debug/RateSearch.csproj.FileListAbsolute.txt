@@ -1,0 +1,7 @@
+C:\Projects\MVCProject\WebApplication1\RateSearch\bin\Debug\RateSearch.dll
+C:\Projects\MVCProject\WebApplication1\RateSearch\bin\Debug\RateSearch.pdb
+C:\Projects\MVCProject\WebApplication1\RateSearch\obj\Debug\RateSearch.csprojResolveAssemblyReference.cache
+C:\Projects\MVCProject\WebApplication1\RateSearch\obj\Debug\RateSearch.dll
+C:\Projects\MVCProject\WebApplication1\RateSearch\obj\Debug\RateSearch.pdb
+C:\Projects\MVCProject\WebApplication1\RateSearch\bin\Debug\Newtonsoft.Json.dll
+C:\Projects\MVCProject\WebApplication1\RateSearch\bin\Debug\Newtonsoft.Json.xml

@@ -199,6 +199,7 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\RateSearchController.cs" />
     <Compile Include="Controllers\TestUserController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -281,6 +282,7 @@
     <Content Include="Views\TestUser\Create.cshtml" />
     <Content Include="Views\TestUser\Edit.cshtml" />
     <Content Include="Views\TestUser\Delete.cshtml" />
+    <Content Include="Views\RateSearch\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -297,6 +299,10 @@
     <ProjectReference Include="..\DbLibrary\DbLibrary.csproj">
       <Project>{024A56D0-0F93-4101-8DE4-ED7F529C01D9}</Project>
       <Name>DbLibrary</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RateSearch\RateSearch.csproj">
+      <Project>{5c054c30-b7ee-4fd5-8310-4e8b4f3a2a16}</Project>
+      <Name>RateSearch</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>

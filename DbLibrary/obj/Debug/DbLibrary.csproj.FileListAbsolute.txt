@@ -8,3 +8,15 @@ C:\Users\emcginnis\Documents\Visual Studio 2015\Projects\WebApplication1\DbLibra
 C:\Users\emcginnis\Documents\Visual Studio 2015\Projects\WebApplication1\DbLibrary\obj\Debug\DbLibrary.csprojResolveAssemblyReference.cache
 C:\Users\emcginnis\Documents\Visual Studio 2015\Projects\WebApplication1\DbLibrary\obj\Debug\DbLibrary.dll
 C:\Users\emcginnis\Documents\Visual Studio 2015\Projects\WebApplication1\DbLibrary\obj\Debug\DbLibrary.pdb
+C:\Projects\MVCProject\WebApplication1\DbLibrary\bin\Debug\DbLibrary.dll.config
+C:\Projects\MVCProject\WebApplication1\DbLibrary\bin\Debug\DbLibrary.dll
+C:\Projects\MVCProject\WebApplication1\DbLibrary\bin\Debug\DbLibrary.pdb
+C:\Projects\MVCProject\WebApplication1\DbLibrary\bin\Debug\EntityFramework.dll
+C:\Projects\MVCProject\WebApplication1\DbLibrary\bin\Debug\EntityFramework.SqlServer.dll
+C:\Projects\MVCProject\WebApplication1\DbLibrary\bin\Debug\EntityFramework.xml
+C:\Projects\MVCProject\WebApplication1\DbLibrary\bin\Debug\EntityFramework.SqlServer.xml
+C:\Projects\MVCProject\WebApplication1\DbLibrary\obj\Debug\DbLibrary.csprojResolveAssemblyReference.cache
+C:\Projects\MVCProject\WebApplication1\DbLibrary\obj\Debug\DbLibrary.dll
+C:\Projects\MVCProject\WebApplication1\DbLibrary\obj\Debug\DbLibrary.pdb
+C:\Projects\MVCProject\WebApplication1\DbLibrary\bin\Debug\Newtonsoft.Json.dll
+C:\Projects\MVCProject\WebApplication1\DbLibrary\bin\Debug\Newtonsoft.Json.xml
